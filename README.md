@@ -19,6 +19,12 @@ This app allows users to **browse products, add to cart, purchase items, and man
 
 ---
 
+![image](https://github.com/user-attachments/assets/f571ca75-c096-449c-841c-13018220f25f)
+![image](https://github.com/user-attachments/assets/9490dff6-4b06-4890-8d40-70dbbf7d8370)
+![image](https://github.com/user-attachments/assets/9772444b-eada-4326-a159-88ab3207e727)
+![image](https://github.com/user-attachments/assets/04d95419-d446-40a8-9244-3621abc9b9f1)
+![image](https://github.com/user-attachments/assets/5537e609-328d-4306-83a4-09d34b2780bd)
+
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML, Tailwind CSS, JavaScript, React, Redux Toolkit, Axios  
@@ -202,11 +208,7 @@ Future Enhancements
 🛒 Multi-vendor functionality
 
 
-![image](https://github.com/user-attachments/assets/f571ca75-c096-449c-841c-13018220f25f)
-![image](https://github.com/user-attachments/assets/9490dff6-4b06-4890-8d40-70dbbf7d8370)
-![image](https://github.com/user-attachments/assets/9772444b-eada-4326-a159-88ab3207e727)
-![image](https://github.com/user-attachments/assets/04d95419-d446-40a8-9244-3621abc9b9f1)
-![image](https://github.com/user-attachments/assets/5537e609-328d-4306-83a4-09d34b2780bd)
+
 
 
 
