@@ -1,229 +1,238 @@
-# 🛒 E-Commerce Application
+```
+Develop By Manu Pathak .
+If any Body want to help for Projects than contact me .
 
-An end-to-end full stack **E-commerce Web Application** built using modern technologies.  
-This app allows users to **browse products, add to cart, purchase items, and manage their orders** — just like a real-world online store.
+
+```
+Author : Manu Pathak
+[www.javatech4u.com](www.javatech4u.com)
+Email : [pathakmanu6395@gmail.com](pathakmanu@gmail.com)
+
+
+#  Ecommerce Application Documentation
+
+## Project title : Shopsy - Begin the Shopping
+Modular, Scalable, and Customizable ERP built using React, Spring Boot, and MySQL, MongoDB and Micro-Service.
+
+##### Table of Contents
+1. [Project Overview](#project-overview)  
+2. [Features and Application](#features)  
+3. [Tech Stack](#tech-stack) 
+4. [Installation and setup](#-database-design)
+4. [Architecture Diagram](#architecture-diagram)
+4. [Security](#-database-design)
+4. [Requirement](#-database-design)
+4. [Systen Design](#-database-design)
+4. [Hardware and Software,Libaries and Module](#-database-design)
+4. [Tools and Platform](#-database-design)
+5. [Module Breakdown](#module-breakdown)  
+6. [Database Design (DFD , ER-Diagram , UML)](#database-design)  
+7. [Propesed and Methodology](#installation-guide)  
+8. [Design and Development](#api-documentation)
+8. [API Documentation](#api-documentation)
+9. [Result](#security)   
+11. [Future Improvements](#future-improvements)  
+12. [Screenshots / Demo](#screenshots--demo)
+---
+
+### 1. Project Overview
+This ERP system centralizes and streamlines business operations such as **Inventory Management**, **Sales & Purchases**, **Customer Handling**, **User Roles**, and **Finance Tracking**. Designed for SMEs, it is modular, responsive, and built on a RESTful architecture.
+
+---
+### 2. Features
+- Product Management
+- Shopping Features
+- Checkout & Payment
+- Order & Delivery
+-  Support & Notifications
+- Admin Panel
+- AI Features in E-Commerce
+   - Product Recommendation Engine
+   -  Smart Search with NLP
+   - Visual Search
+   - AI Chatbot for Customer Support
+   - Dynamic Pricing
+   - Personalized UI/UX
+   -  Demand Forecasting
+   - Email/Notification Targeting
+   - Sales Analytics & Prediction
+- 🤖 **AI-Powered Features for ERP Applications**
+     - _Smart Analytics & Forecasting_
+     - Sales Forecasting
+     - Inventory Demand Prediction
+     - Expense Pattern Detection
+     - Intelligent Recommendations
+        - Purchase Suggestions
+        - Product Bundle Recommendations
+        - Dynamic Discounting
+        - Product Image Classification
+        - Auto-Scheduling Orders & Reminders
+        - AI-Based Email/SMS Reminders
+        - Voice Alert Assistant
+        - AI-Powered KPI Suggestions
+    - Natural Language Processing (NLP)
+      - Chatbot for Admin Queries
+      - Voice-to-Text for Invoicing
+      - Smart Search Suggestions
+    - Security & Anomaly Detection
+      - Login Anomaly Detection
+      - Fraud Detection in Transactions
+      - Face Recognition Login 
+- 🔐 **User Account Management**
+    - Role-Based Access Control (RBAC): Admin, Manager, Staff
+    - JWT-based Authentication System
+    - Secure Login with Password Hashing (BCrypt)
+    - Session Expiry and Token Validation
+    <br>
+- 📦 **Inventory & Stock Tracking**  
+     - Add / Update / Delete Products and Categories
+     - Real-time Stock Level Tracking
+     - Low-Stock Notifications and Threshold Alerts
+     - Barcode/QR Code Integration (optional)
+     - Unit Management (kg, liter, pcs etc.)
+<br>
+-  **Product Variants (size, color, etc.)**
+    - Add product and Perform CURD Options and Analysis
+    - Management of Product
+- **Sales & Purchase Reports with GST integration**
+    - Add/Edit/Delete Sales Orders
+    - Real-Time Sales Dashboard
+    - Discount, Tax (GST), and Coupon Management
+    - PDF Invoice Generation
+    - Daily,Weekly, and Monthly Sales Reports
+
+- **Payment Mode Tracking** (Cash, UPI, Bank Transfer)
+   - UPI Payment Intregation
+   - Bank Transfer 
+   - RazorPay
+
+- 🧾 **Invoice Generation & PDF Export** 
+    - Invoice and PDF Management <br>
+- 👥 **Customer & Supplier Management**  
+- 🧑‍💼 **HRM: Employee CRUD + Attendance**  
+- ⚙️ **Configurable Tax, Discounts, Payment Modes**  
+- 🌗 **Light/Dark Theme Toggle (React UI)** 
+- 🛠 **REST APIs for mobile app integration**
 
 ---
 
-## 📌 Features
-
-- 👤 **User Authentication & Authorization** (JWT-based)
-- 🛍️ **Product Browsing** with categories, filters, and search
-- 🛒 **Shopping Cart** with quantity adjustments
-- 💳 **Checkout & Payment** (Mock or real via Razorpay/Stripe)
-- 📦 **Order Tracking** and order history
-- 🔒 **Admin Panel** for product & order management
-- 🧾 **Invoice generation** (optional)
-- 📊 **Analytics Dashboard** (for admin)
-- 🌐 **Responsive UI** (Mobile + Desktop)
-
----
-
-![image](https://github.com/user-attachments/assets/f571ca75-c096-449c-841c-13018220f25f)
-![image](https://github.com/user-attachments/assets/9490dff6-4b06-4890-8d40-70dbbf7d8370)
-![image](https://github.com/user-attachments/assets/9772444b-eada-4326-a159-88ab3207e727)
-![image](https://github.com/user-attachments/assets/04d95419-d446-40a8-9244-3621abc9b9f1)
-![image](https://github.com/user-attachments/assets/5537e609-328d-4306-83a4-09d34b2780bd)
-
-## 🛠️ Tech Stack
-
-- **Frontend**: HTML, Tailwind CSS, JavaScript, React, Redux Toolkit, Axios  
-- **Backend**: Spring Boot, Spring JPA, Spring Security, Spring Kafka, Spring Redis, Spring Session  
-- **Database**: MySQL, PostgreSQL, Firebase, Redis  
-- **Tools & Libraries**: TensorFlow (Machine Learning), Dotenv, Razorpay, Cloudinary, JWT, Postman, Kafka, Docker  
-
----
-
-## 🧩 Folder Structure
-
-ecommerce/
-│
-├── controller/
-│ ├── AuthController
-│ ├── UserController
-│ ├── HomeController
-│ ├── ProductController
-│ ├── OrderController
-│ ├── PaymentController
-│ ├── TrackingController
-│ ├── ProfileController
-│ ├── DeviceController
-│ ├── WiseListController
-│ ├── UIController
-│ ├── SaleController
-│ ├── AnalysisController
-│ ├── AdminController
-│ └── SettingController
-│
-├── model/
-│ ├── UserModel
-│ ├── ProductModel
-│ ├── QueryModel
-│ ├── ProductExtendModel
-│ ├── UIModel
-│ ├── SalesModel
-│ ├── OrderModel
-│ └── PaymentModel
-│
-├── request/
-├── response/
-├── filter/
-│ ├── AuthFilter
-│ ├── CSRFFilter
-│ └── OptimizationController
-│
-├── security/
-│ ├── ProductSecurity
-│ ├── AdminSecurity
-│ ├── PaymentSecurity
-│ └── ResourceSecurity
-│
-├── kafka/
-│ ├── ProductListener
-│ ├── ReceiverProduct
-│ └── OrderSubscriber
-│
-├── session/
-│ └── UserSession
-│
-├── repo/
-│ └── UserRepo
-│
-├── service/
-├── serviceImpl/
-└── util/
+### 🧰 Tech Stack
 
 
+| Layer           | Technology                |
+|----------------|---------------------------|
+| Frontend       | React.js, Tailwind CSS    |
+| Backend        | Node.js / Spring Boot     |
+| Database       | MongoDB / MySQL           |
+| Auth           | JWT, Google/Firebase Auth |
+| AI             | LLMs (LLaMA, GPT), Python  |
+| Deployment     | Netlify (FE), Render / Railway (BE) |
+| Other Tools    | Stripe/Razorpay, Docker   |
+
+
+
+## Installation
+
+For Frontend
+```
+git clone https://github.com/manu367/erp_coach.git
+cd erp_coach
+npm install
+```
+Go to Backend and Setup 
+```
+cd backend
+open backend code in intillij idea
+maven clean and install
+set up application.properties
+```
+application.properties
+```
+server.port= user_according
+spring.datasource.url=jdbc:DATABASE_NAME://URL:PORT
+spring.datasource.username=user_name
+spring.datasource.password=Password
+spring.datasource.driver-class-name=org.postgresql.Driver (add lastest Driver)
+google.client-id= add your client id
+google-secrent-id= add your secret id
+
+Jwt-token= ADD_TOKEN_According by you
+```
+
+
+
+### Architecture Diagram
+
+```mermaid
+graph TD;
+  User-->React_App;
+  React_App --> Main_application;
+  React_App --> Main_application_1;
+```
+
+
+
+#### 🧩 Module Breakdown
+
+### 1. Authentication & Authorization
+- JWT Token-based login system  
+- User roles: Admin | Manager | Staff  
+- Passwords hashed using BCrypt  
+
+### 2. Inventory Module
+- CRUD operations for products  
+- Category/Subcategory based filtering  
+- Stock alerts when quantity is low  
+
+### 3. Sales & Purchase
+- Order processing with tax, discount, payment  
+- Daily/Monthly reporting  
+- Export to PDF  
+
+### 4. Customer/Supplier
+- Contact info, GST number, history of transactions  
+- Smart search & sorting  
+
+### 5. HRM Module (Optional)
+- Employee registration  
+- Daily attendance log  
+- Leave tracker  
 
 ---
 
-## ⚙️ How to Install Locally
+## 🧬 Database Design
 
-### 🧾 Prerequisites
+### Tables:
 
-- ✅ Java installed and `JAVA_HOME` set  
-- ✅ MongoDB installed (or MongoDB Atlas URI)  
-- ✅ Docker installed & configured  
-- ✅ Kafka installed (follow a YouTube tutorial if needed)  
-- ✅ Redis installed & running  
-- ✅ Git installed
+- `users` (id, name, email, password, role)  
+- `products` (id, name, price, category, stock, created_at)  
+- `categories` (id, name, parent_id)  
+- `orders` (id, customer_id, total_amount, date, status)  
+- `order_items` (order_id, product_id, quantity, price)  
+- `customers` (id, name, email, gst, phone)  
+- `suppliers` (id, name, contact)  
+- `employees` (id, name, position, joined_on)  
+
+### Relationships:
+
+- One order → many order items  
+- One product → many categories  
+- One user → one role  
 
 ---
 
-### 🔽 Clone the Repository
+## ⚙️ Installation Guide
+
+### Frontend (React)
 
 ```bash
-git clone https://github.com/your-username/ecommerce-app.git
-cd ecommerce-app
+cd frontend
+npm install
+npm run dev
+```
 
 
-
-MongoDB Schema Overview
-Users
-{
-  "name": "String",
-  "email": "String",
-  "password": "String (hashed)",
-  "role": "user | admin",
-  "cart": [{ "productId": "ObjectId", "quantity": Number }],
-  "orders": ["ObjectId"]
-}
-
-
-📦 Products
-{
-  "name": "String",
-  "description": "String",
-  "price": Number,
-  "category": "String",
-  "images": ["URL"],
-  "stock": Number
-}
-
-
-Orders
-{
-  "userId": "ObjectId",
-  "products": [{ "productId": "ObjectId", "quantity": Number }],
-  "totalAmount": Number,
-  "paymentStatus": "pending | paid",
-  "deliveryStatus": "processing | shipped | delivered",
-  "timestamp": "Date"
-}
-
-
-Backend Functionality (API Routes)
-Authentication
-POST /api/auth/register — Register user
-
-POST /api/auth/login — Login and return JWT
-
-📦 Product Management
-GET /api/products — Get all products
-
-GET /api/products/:id — Get product by ID
-
-POST /api/products — (Admin) Add product
-
-PUT /api/products/:id — (Admin) Update product
-
-DELETE /api/products/:id — (Admin) Delete product
-
-🛒 Cart & Orders
-POST /api/cart — Add to cart
-
-GET /api/cart — View cart
-
-DELETE /api/cart/:productId — Remove from cart
-
-POST /api/orders — Create order
-
-GET /api/orders — View user orders
-
-GET /api/admin/orders — (Admin) View all orders
-
-🛡️ Middleware
-authMiddleware.js — Verifies JWT token
-
-adminMiddleware.js — Restricts route to admin only
-
-🧪 API Testing
-Use Postman to test:
-
-🔐 JWT-protected routes (add token in headers)
-
-📦 CRUD operations for product
-
-👤 User login/registration flow
-
-Future Enhancements
-⭐ Product reviews & ratings
-
-📩 Real-time notifications (WebSocket)
-
-🧠 AI-based recommendation engine
-
-🎟️ Coupons & discount support
-
-🛒 Multi-vendor functionality
-
-
-
-
-
-
-
-
-### ✅ To-Do for You:
-1. Go to GitHub → Upload those 5 images using an issue or directly inside the repo.
-2. Replace all the `https://raw.githubusercontent.com/...` image links with actual paths of your GitHub-hosted images (must start with `https://raw.githubusercontent.com/...`).
-3. Push this `README.md` inside your GitHub repo root.
-
-Bhai ab yeh `README.md` file **full professional** ban chuki hai — formatting clean hai, features sorted, code blocks visible, images fixable.
-
-Chahe MNC ho ya startup — koi bhi dev ya recruiter yeh padhega toh samajh jayega ki **full-stack skills solid hai** 💪
-
-Agar chahe toh main tera GitHub pe repo bhi polish karwa du — bol de bas.
+---
 
 
 
@@ -234,9 +243,13 @@ Agar chahe toh main tera GitHub pe repo bhi polish karwa du — bol de bas.
 
 
 
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
 
-
-
-
-
-
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
